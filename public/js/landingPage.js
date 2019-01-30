@@ -1,12 +1,12 @@
 $(document).ready(function() {
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyCfOFTf4as4yb3kxUSr5gDyjtPbcGH54rU",
-    authDomain: "tv-app-ed734.firebaseapp.com",
-    databaseURL: "https://tv-app-ed734.firebaseio.com",
-    projectId: "tv-app-ed734",
-    storageBucket: "tv-app-ed734.appspot.com",
-    messagingSenderId: "754759581231"
+    apiKey: "AIzaSyACbHCMM-fsXEM8NiWBDPxTP3BIEBYrD8w",
+    authDomain: "regardeh-f6a1c.firebaseapp.com",
+    databaseURL: "https://regardeh-f6a1c.firebaseio.com",
+    projectId: "regardeh-f6a1c",
+    storageBucket: "regardeh-f6a1c.appspot.com",
+    messagingSenderId: "747469212268"
   };
   firebase.initializeApp(config);
 
