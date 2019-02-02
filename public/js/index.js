@@ -179,27 +179,27 @@ function getMovie() {
     $("#mainpage").hide();
     $("#movies").hide();
 
-    // var omdbUrl =
-    //   "http://www.omdbapi.com/?t=" +
-    //   " ' " +
-    //   (movie.name || movie.title) +
-    //   " ' " +
-    //   "&y=&plot=short&apikey=trilogy";
+    var omdbUrl =
+      "http://www.omdbapi.com/?t=" +
+      " ' " +
+      (movie.name || movie.title) +
+      " ' " +
+      "&y=&plot=short&apikey=trilogy";
 
-    // console.log(omdbUrl);
+    console.log(omdbUrl);
 
-    //   $.ajax({
-    //     url: omdbUrl,
-    //     method: "get"
-    //   }).then(function(error, response, body) {
-    //     var imdb = body.responseJSON.Ratings[0].Value;
-    //     var rtomatoes = body.responseJSON.Ratings[1].Value;
+    $.ajax({
+      url: omdbUrl,
+      method: "get"
+    }).then(function(error, response, body) {
+      var imdb = body.responseJSON.Ratings[0].Value;
+      var rtomatoes = body.responseJSON.Ratings[1].Value;
 
-    //     $("#rottenrating").text(rtomatoes);
-    //     $("#imdbrating").text(imdb);
+      $("#rottenrating").text(rtomatoes);
+      $("#imdbrating").text(imdb);
 
-    //     console.log("IMDB rating: " + imdb);
-    //     console.log("Rotten Tomatoes rating: " + rtomatoes);
-    //   });
+      console.log("IMDB rating: " + imdb);
+      console.log("Rotten Tomatoes rating: " + rtomatoes);
+    });
   });
 }
