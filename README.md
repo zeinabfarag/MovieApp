@@ -6,24 +6,20 @@ A full stack single page movie application built using MySQL, Node.js, Express.j
 
 ## Description
 
-This app renders movie information from "the movie database" API using jQuery. Unauthorized users are able to see an inital display of the most recent movies. They are also able to search for a particular movie using the search bar. Once they click on the movie poster, the movie's details are displayed. Only logged in authorized users are then able to save a particualr movie to their favorites or schedule a time they would like to see a movie and save it to their own calendar (done using datepicker.js and fullcalendar.js). The app saves the users data using node.js and express.js to the MySQL database. The front-end of the application is done mainly using bootstrap and CSS. jQuery is used to manipulate the DOM making it a single page application. 
+This app renders movie information from "the movie database" API using jQuery. 
 
-## Installation
+Unauthorized users are able to see an inital display of the most recent movies. They are also able to search for a particular movie using the search bar. Once they click on the movie poster, the movie's details are displayed. 
 
-To run the application locally, first clone the repository:
+Only logged in authorized users are then able to save a particular movie to their favourites or schedule a time they would like to see a movie and save it to their own calendar (done using datepicker.js and fullcalendar.js). 
 
-	git clone https://github.com/zeinabfarag/MemoryGame.git
-	cd MemoryGame
-Then, install the depencies and start the app:
-```
-yarn install
-yarn start
-```
-Now, open the local application on port 3000 at the URL: `http://localhost:3000/`.
+Users are able to login using their email, github, or google account with the help of firebase. 
+
+The app saves the users data using node.js and express.js to the MySQL database. The front-end of the application is done mainly using bootstrap and CSS. jQuery is used to manipulate the DOM making it a single page application. 
 
 ## Technologies used
 
 * MySQL
+* Firebase
 * Express.js
 * Node.js
 * jQuery
@@ -32,3 +28,10 @@ Now, open the local application on port 3000 at the URL: `http://localhost:3000/
 ## Website
 
 https://regardeh.herokuapp.com/
+
+## Authors
+
+[Zeinab Farag](https://github.com/zeinabfarag)
+[Brandon Weir](https://github.com/weirbran)
+[Anthony Yin](https://github.com/Anthonyin)
+[Shaoming Yin](https://github.com/syin1)
